@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to{' '}
           <a href="https://upload.wikimedia.org/wikipedia/commons/7/7c/Cima_da_Conegliano%2C_God_the_Father.jpg">
-            Sam Woods
+            Sam Woods'
           </a>{' '}
           Website
         </h1>
