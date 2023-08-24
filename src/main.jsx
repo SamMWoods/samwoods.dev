@@ -9,7 +9,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-
-    <h3>React is running!</h3>
   </React.StrictMode>
 );
