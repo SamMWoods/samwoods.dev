@@ -38,9 +38,12 @@ function Home() {
     <>
       <canvas id="hyperspace" />
       <div className="title-container">
-        <h1 className="title">Welecome to</h1>
         <h1 className="title colour">Sam Woods'</h1>
         <h1 className="title">Website</h1>
+        <div className="input-wrapper">
+          <input aria-label="Ask us anything" />
+          <span className="placeholder"></span>
+        </div>
       </div>
     </>
   );

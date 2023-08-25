@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+@import 'typed';
+
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -36,4 +38,51 @@ body {
 
 .title.colour {
   color: #0070f3;
+}
+
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 100%;
+  text-align: center;
+  > input,
+  > .placeholder {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    color: #fff;
+    pointer-events: none;
+    @include typed(
+      'Welcome to my website',
+      'I am a software developer',
+      'I am a blogger',
+      'I am a gamer',
+      'So in short, I am a nerd',
+      'Living in the UK, on the outskirts of London',
+      'I studied Computer Science at Nottingham Trent University',
+      'I am currently working as a Software Developer at a company called HireRoad',
+      'I like spending my free time working on personal projects',
+      'I have a few projects, which you can find below',
+      'enjoy your stay',
+      2,
+      (
+        caret-width: 2px,
+        caret-space: 2px,
+      )
+    );
+  }
+  > input {
+    &:focus,
+    &:active {
+      + .placeholder {
+        display: none;
+      }
+    }
+  }
 }
