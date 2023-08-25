@@ -38,8 +38,14 @@ function Home() {
     <>
       <canvas id="hyperspace" />
       <div className="title-container">
-        <h1 className="title colour">Sam Woods'</h1>
-        <h1 className="title">Website</h1>
+        <span style={{ display: 'flex' }}>
+          <h1 className="title" style={{ paddingRight: '.2em' }}>
+            I'm{' '}
+          </h1>
+          <h1 className="title colour">Sam Woods'</h1>
+        </span>
+        <h3 className="title-h3">&& here a little summury about me</h3>
+
         <div className="input-wrapper">
           <input aria-label="Ask us anything" />
           <span className="placeholder"></span>
